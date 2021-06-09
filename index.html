@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:10px;
+			padding:0;
+			
+		}
+		li{
+			list-style-type:none;
+		}
+		body{
+			width:1020px;
+			margin:auto;
+		}
+		header{
+			width:995px;
+			height:100px;
+			background-color:blue;
+		}
+		header img{
+			position: relative;
+			left: -20px;
+			top: -10px;
+		}
+		nav{
+			width:995px;
+			height:80px;
+			border:solid 2px #dddddd;
+		}
+		nav li{
+			display:inline;
+			margin:-50px 90px;
+		}
+		#a{
+			margin:-55px;
+
+		}
+		section{
+			width:85%;
+			height:70%;
+			float:left;
+		}
+		aside{
+			float:right;
+			margin:7px;
+			border:solid 2px #dddddd;
+		}
+		aside li{
+			margin-bottom:50px; 
+			margin: 20px;
+			right: 10px;
+
+		}
+		iframe{
+			clear:both;
+		}
+		
+		footer{
+			width:995px;
+			height:100px;
+			margin-top:20px;
+		}
+		#od1{
+			position:relative;
+			display:inline-block;
+			width:80px;
+			height:80px;
+			margin:50px;
+		}
+		#od1 #od2{
+			display:none;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:99;
+		}
+		#od1:hover #od2{
+			display:inline; 
+		}
+		#od3{
+			position:relative;
+			display:inline-block;
+			width:80px;
+			height:80px;
+			margin:50px;
+		}
+		#od3 #od4{
+			display:none;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:99;
+		}
+		#od3:hover #od4{
+			display:inline; 
+		}
+		#od5{
+			position:relative;
+			display:inline-block;
+			width:80px;
+			height:80px;
+			margin:50px;
+		}
+		#od5 #od6{
+			display:none;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:99;
+		}
+		#od5:hover #od6{
+			display:inline; 
+		}
+	
+
+	</style>
+</head>
+<body>
+	<header>
+		<a href="index.html">
+		<img src="./img/c.png" width="100%" height="100%">
+		</a>
+	</header>
+	<nav>
+		<ul id="a">
+			<li ><a href="nav01.html" target="a" id="od1"><img src="./img/k.png">
+				<img src="./img/k1.png" id="od2"></a></li>
+			<li ><a href="nav02.html" target="a" id="od3"><img src="./img/o.png">
+				<img src="./img/o1.png" id="od4"></a></li>
+			<li ><a href="nav03.html" target="a" id="od5"><img src="./img/t.png">
+				<img src="./img/t1.png" id="od6"></a></li>
+		</ul>
+	</nav>
+ 	<iframe src="pag1.html" name=a width="800" height="700" scrolling="no" frameborder=0>    </iframe>
+	<aside>
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=NZp_axebSfQ"  target="blank"><img src="./img/u1.png"></a></li>
+			
+		</ul> 
+	</aside>
+	<footer>
+		작성자 : 김채린 | 학번 : 2021-1010
+	</footer>
+</body>
+</html>
