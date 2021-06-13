@@ -8,17 +8,21 @@
 			padding:0;
 			
 		}
+		div{
+			
+		}
 		li{
 			list-style-type:none;
 		}
 		body{
 			width:1020px;
 			margin:auto;
+			display: block;
 		}
 		header{
 			width:995px;
 			height:100px;
-			background-color:blue;
+			
 		}
 		header img{
 			position: relative;
@@ -26,13 +30,17 @@
 			top: -10px;
 		}
 		nav{
-			width:995px;
+			width:1000px;
 			height:80px;
-			border:solid 2px #dddddd;
+			background-image: url(./img/ccc.png);
+			position: relative;
+			top: 60px;
 		}
 		nav li{
 			display:inline;
 			margin:-50px 90px;
+			position: relative;
+			top: -55px;
 		}
 		#a{
 			margin:-55px;
@@ -44,24 +52,28 @@
 			float:left;
 		}
 		aside{
-			float:right;
-			margin:7px;
-			border:solid 2px #dddddd;
+			
+			position: absolute;
+			top: 13pc;
+			right: 90pc;
 		}
-		aside li{
-			margin-bottom:50px; 
-			margin: 20px;
-			right: 10px;
-
+		audio{
+			width: 80%;
 		}
 		iframe{
 			clear:both;
+			margin: auto;
+			position: relative;
+			top: 80px;
+
 		}
 		
 		footer{
 			width:995px;
 			height:100px;
 			margin-top:20px;
+			position: relative;
+			bottom: -60px;
 		}
 		#od1{
 			position:relative;
@@ -114,14 +126,17 @@
 		#od5:hover #od6{
 			display:inline; 
 		}
-	
+		
 
 	</style>
 </head>
 <body>
+	
 	<header>
 		<a href="index.html">
-		<img src="./img/c.png" width="100%" height="100%">
+		
+		<img src="./img/donut3.gif" width="200" height="100">
+		<img src="./img/c.png">
 		</a>
 	</header>
 	<nav>
@@ -134,15 +149,19 @@
 				<img src="./img/t1.png" id="od6"></a></li>
 		</ul>
 	</nav>
- 	<iframe src="pag1.html" name=a width="800" height="700" scrolling="no" frameborder=0>    </iframe>
+ 	<iframe src="pag1.html" name=a width="1000" height="700" scrolling="no" frameborder=0>    </iframe>
+	
+	<footer>
+		김채린 | 번호 : 2021-1010
+	</footer>
+	</div>
 	<aside>
 		<ul>
-			<li><a href="https://www.youtube.com/watch?v=NZp_axebSfQ"  target="blank"><img src="./img/u1.png"></a></li>
+			<li><audio autoplay controls loop
+        ><source src="./img/kiki.mp3" type=""> 
+    </audio></li>
 			
 		</ul> 
 	</aside>
-	<footer>
-		작성자 : 김채린 | 학번 : 2021-1010
-	</footer>
 </body>
 </html>
