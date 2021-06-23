@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>◎I love donut</title>
 	<style type="text/css">
 		*{
 			margin:10px;
@@ -20,21 +20,29 @@
 			display: block;
 		}
 		header{
-			width:995px;
+			width:2000px;
 			height:100px;
+			position: relative;
+			left: -20pc;
+			top: -1pc;
 			
 		}
-		header img{
-			position: relative;
-			left: -20px;
-			top: -10px;
+		.he2{
+			position:absolute;
+			left: 35pc;
+			top: 1pc;
+		}
+		.he1{
+			position:absolute;
+			left: 22pc;
+			top: -2pc;
 		}
 		nav{
 			width:1000px;
 			height:80px;
 			background-image: url(./img/ccc.png);
-			position: relative;
-			top: 60px;
+			position: absolute;
+			top: 9pc;
 		}
 		nav li{
 			display:inline;
@@ -46,34 +54,45 @@
 			margin:-55px;
 
 		}
-		section{
-			width:85%;
-			height:70%;
-			float:left;
-		}
+
 		aside{
 			
-			position: absolute;
-			top: 13pc;
-			right: 90pc;
+			position:relative;
+			top: 7pc;
+			left:-16pc;
 		}
 		audio{
-			width: 80%;
+			width: 200px;
 		}
 		iframe{
 			clear:both;
 			margin: auto;
-			position: relative;
-			top: 80px;
+			position: absolute;
+			top: 220px;
 
 		}
 		
 		footer{
-			width:995px;
+			width:685px;
 			height:100px;
-			margin-top:20px;
 			position: relative;
-			bottom: -60px;
+			bottom: -45pc;
+			left: 7pc;
+			border: dotted 5px #FFDEAD;
+			border-radius: 25px;
+		}
+		.ff1{
+			font-weight:bold;
+			font-size: 20px;
+			position: absolute;
+			left: 11pc;
+			bottom: 49px;
+		}
+		form{
+			position: absolute;
+			left: 12pc;
+			bottom: 2px;
+			font-weight:bold;
 		}
 		#od1{
 			position:relative;
@@ -126,7 +145,29 @@
 		#od5:hover #od6{
 			display:inline; 
 		}
-		
+		.t1{
+			margin: 0px 2px;opacity: 0.1;float: left;
+			width: 30px; height: 1px;
+			outline: 1px solid transparent;
+			animation:name 1s 0s infinite ease-in-out alternate;
+			
+		}
+		.t1:nth-child(2){animation-delay: 0.2s; background:#ffd9c7; }
+		.t1:nth-child(3){animation-delay: 0.5s; background:#ffa67b; }
+		.t1:nth-child(4){animation-delay: 0.9s; background:#ff9059; }
+		.t1:nth-child(5){animation-delay: 0.10s; background:#ff7531; }
+		.t1:nth-child(6){animation-delay: 0.20s; background:#ff5400; }
+
+		@keyframes name{
+
+			100%{width:30px; height: 100px; opacity:2;}
+		}
+		.ul1{
+			position: relative;
+			left:0pc;
+		}
+
+
 
 	</style>
 </head>
@@ -135,8 +176,8 @@
 	<header>
 		<a href="index.html">
 		
-		<img src="./img/donut3.gif" width="200" height="100">
-		<img src="./img/c.png">
+		<img src="./img/donut3.gif" width="200" height="100" class="he1">
+		<img src="./img/c.png" class="he2">
 		</a>
 	</header>
 	<nav>
@@ -151,17 +192,31 @@
 	</nav>
  	<iframe src="pag1.html" name=a width="1000" height="700" scrolling="no" frameborder=0>    </iframe>
 	
-	<footer>
-		김채린 | 번호 : 2021-1010
-	</footer>
-	</div>
+	
+	
 	<aside>
 		<ul>
 			<li><audio autoplay controls loop
         ><source src="./img/kiki.mp3" type=""> 
     </audio></li>
 			
-		</ul> 
+		</ul > 
+		<div class=ul1>
+		<div class=t1></div>
+		<div class=t1></div>
+		<div class=t1></div>
+		<div class=t1></div>
+		<div class=t1></div>
+		<div class=t1></div>
 	</aside>
+	<footer>
+		<div class="ff1">마음에 들었던 페이지를 알려주세요!</div>
+		<form>
+		<label><input type="checkbox">케이크</label>
+		<label><input type="checkbox">도넛</label>
+		<label><input type="checkbox">쿠키</label>
+		<button type="button">제출</button>
+		</form>
+	</footer>
 </body>
 </html>
